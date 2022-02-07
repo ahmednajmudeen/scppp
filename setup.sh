@@ -11,14 +11,11 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( wget -qO- icanhazip.com )
+IZIN=$(wget -qO- icanhazip.com)
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
-echo -e "${red}Permission Denied!${NC}";
-echo "Please Contact Admin"
-echo "Telegram t.me/whytzy96"
-rm -f setup.sh
+echo -e "${green}Permission Accepted...${NC}"
 exit 0
 fi
 if [ -f "/etc/v2ray/domain" ]; then
