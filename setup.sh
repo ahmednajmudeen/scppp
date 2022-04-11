@@ -20,28 +20,28 @@ fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install Domain
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/cf.sh && chmod +x cf.sh && bash cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn bash ssh-vpn.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp bash sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ssr.sh && chmod +x ssr.sh && screen -S ssr bash ssr.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/sodosok.sh && chmod +x sodosok.sh && screen -S ss bash sodosok.sh
 #installwg
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/wg.sh && chmod +x wg.sh && screen -S wg bash wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray bash ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec bash ipsec.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/set-br.sh && chmod +x set-br.sh && bash set-br.sh
 # Install Neofetch
 #install edu
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/cdn.sh && chmod +x cdn.sh && screen -S cdn.sh ./cdn.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/cdn.sh && chmod +x cdn.sh && screen -S cdn.sh bash cdn.sh
 #install ohp
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ohp-db.sh && chmod +x ohp-db.sh && screen -S ohp-db.sh ./ohp-db.sh
-wget https://raw.githubusercontent.com/project-vps/ngopi/main/ohp-ovpn.sh && chmod +x ohp-ovpn.sh && screen -S ohp-ovpn.sh ./ohp-ovpn.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/install/ohp-db.sh && chmod +x ohp-db.sh && screen -S ohp-db.sh bash ohp-db.sh
+wget https://raw.githubusercontent.com/project-vps/ngopi/main/ohp-ovpn.sh && chmod +x ohp-ovpn.sh && screen -S ohp-ovpn.sh bash ohp-ovpn.sh
 #install lolcat
-wget https://raw.githubusercontect.com/project-vps/ngopi/main/install/lolcat.sh && chmod +x lolcat.sh && ./lolcat.sh
+wget https://raw.githubusercontect.com/project-vps/ngopi/main/install/lolcat.sh && chmod +x lolcat.sh && bash lolcat.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
